@@ -1,0 +1,63 @@
+<!--
+  Generated template for the MessagesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{message.title}}</ion-title>
+    
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background: linear-gradient(to bottom left , white, white, white, #0b8eff)">
+  <ion-card>
+
+    <ion-card-header style="text-align: center; font-size: x-large; background: linear-gradient(to bottom , #0b8eff , #0b8eff, white); color: white;">
+      {{message.title}}
+    </ion-card-header>
+    <img src="{{message.imgUrl}}" />
+
+    <ion-card-content>
+      {{message.text}}
+    </ion-card-content>
+
+  </ion-card>
+  <ion-grid style="padding: 0 !important;">
+    <ion-row>
+      <ion-col col-6 style="padding: 0 !important;">
+        <ion-card>
+          <ion-card-header style="text-align: center;  background: linear-gradient(to bottom , #0b8eff , #0b8eff, white); color: white;">
+            מיקום:
+          </ion-card-header>
+
+          <ion-card-content>
+            {{message.location}}
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+      <ion-col col-6 style="padding: 0 !important;">
+        <ion-card>
+          <ion-card-header style="text-align: center;  background: linear-gradient(to bottom , #0b8eff , #0b8eff, white); color: white;">
+            תאריך:
+          </ion-card-header>
+
+          <ion-card-content>
+            {{message.date | dateTime }}
+          </ion-card-content>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
+</ion-content>
